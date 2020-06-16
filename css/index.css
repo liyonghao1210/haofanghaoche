@@ -1,0 +1,516 @@
+/*
+ * @Author: liyonghao 
+ * @Date: 2020-06-16 19:47:45 
+ * @Last Modified by: liyonghao
+ * @Last Modified time: 2020-06-17 01:07:42
+ */
+
+/* CSS Document */
+html {
+  color: #333;
+  background: #fff;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+fieldset,
+img {
+  border: 0;
+  vertical-align: middle;
+}
+:focus {
+  outline: 0;
+}
+/*font*/
+th {
+  font-style: normal;
+  font-weight: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+input,
+button,
+textarea,
+select,
+optgroup,
+option {
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  vertical-align: middle;
+  color: #333333;
+}
+input,
+button,
+textarea,
+select {
+  *font-size: 100%;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+:link,
+:visited,
+ins {
+  text-decoration: none;
+}
+i {
+  font-style: normal;
+}
+
+.clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clear {
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  clear: both;
+  overflow: hidden;
+}
+/*body*/
+body {
+  font-size: 14px;
+  font-family: "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Segoe UI", Tahoma, "\4f53", SimSun, sans-serif;
+}
+a {
+  color: #333;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+/*public*/
+.floatl,
+.left {
+  float: left;
+}
+.floatr,
+.right {
+  float: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.font14 {
+  font-size: 14px;
+}
+.font16 {
+  font-size: 16px;
+}
+.font18 {
+  font-size: 18px;
+}
+.blod {
+  font-weight: 700;
+}
+.bold {
+  font-weight: bold;
+}
+.Arial {
+  font-family: Arial;
+  padding: 0 2px;
+}
+.SimSun {
+  font-family: SimSun;
+}
+.YaHei {
+  font-family: Microsoft YaHei;
+}
+
+.w-1200 {
+  width: 1200px;
+  margin: 0 auto;
+}
+.rel {
+  position: relative;
+}
+.block {
+  display: block;
+}
+.in-block,
+.inb {
+  display: inline-block;
+}
+.fixed {
+  position: fixed;
+}
+button {
+  border: none;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.mt30 {
+  margin-top: 30px;
+}
+.mt120 {
+  margin-top: 120px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt60 {
+  margin-top: 60px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+/* 首页 */
+.header {
+  background: #fff url(../images/banner.png) no-repeat;
+  width: 100%;
+  height: 720px;
+  padding-top: 40px;
+  background-attachment: fixed;
+  background-position: center 0;
+  display: block;
+  min-width: 1200px;
+  position: relative;
+  box-sizing: border-box;
+}
+.logo {
+  width: 242px;
+  height: 96px;
+  display: inline-block;
+  background: url(../images/logo.png);
+  cursor: pointer;
+}
+.loginWrap {
+  margin-bottom: 20px;
+}
+.loginWrap a {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  line-height: 30px;
+  margin-left: 20px;
+}
+.loginWrap a:hover {
+  color: #f24f00;
+}
+.navWrap li {
+  float: left;
+  line-height: 48px;
+  margin: 0 22px;
+}
+.navWrap li:hover a {
+  color: #f24f00;
+}
+.navWrap li a {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  font-family: PingFang-SC-Heavy;
+}
+.navWrap {
+  height: 48px;
+  background: rgba(47, 47, 47, 0.6);
+  border-radius: 24px;
+}
+.address {
+  width: 160px;
+  height: 48px;
+  background: rgba(47, 47, 47, 0.6);
+  border-radius: 24px;
+  text-align: center;
+  margin-top: 38px;
+}
+.addressBg {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  background: url(../images/address.png) no-repeat;
+  margin-top: 8px;
+  margin-left: 20px;
+}
+.addressW {
+  font-size: 20px;
+  color: #fff;
+  line-height: 48px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+.wenziWrap {
+  width: 554px;
+  height: 82px;
+  margin-top: 70px;
+  background: url(../images/wenzi.png) no-repeat;
+}
+.searchWrapList li {
+  float: left;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-right: 32px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.serarcIptWrap {
+  width: 700px;
+  height: 88px;
+  background: url(../images/search.png) no-repeat 18px center;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 0 10px 0 75px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.serarcIptWrap input {
+  width: 100%;
+  height: 88px;
+  border: 0;
+  font-size: 24px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: #333;
+}
+.searchBtn {
+  width: 200px;
+  height: 88px;
+  cursor: pointer;
+  background: rgba(234, 84, 19, 1);
+  border-radius: 0px 8px 8px 0px;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 1);
+  letter-spacing: 10px;
+}
+.downLoadWrap {
+  margin-top: 40px;
+}
+.downLoadWrap li {
+  float: left;
+}
+.downLoadWrap li a {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  font-size: 18px;
+  margin-right: 25px;
+}
+.downLoadWrap li:hover a {
+  color: rgba(234, 84, 19, 1);
+}
+.ListWraps {
+  margin-bottom: 320px;
+}
+.listTitle {
+  font-size: 46px;
+  font-weight: bold;
+  color: rgba(47, 47, 47, 1);
+}
+.describe {
+  width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 500;
+  color: rgba(159, 159, 159, 1);
+  font-size: 24px;
+}
+.more {
+  font-size: 24px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: rgba(159, 159, 159, 1);
+}
+.more:hover {
+  color: rgba(234, 84, 19, 1);
+}
+.ListImg {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  justify-content: space-between;
+}
+.ListImg li {
+  width: 380px;
+}
+.ListImg li .imgWrap {
+  border-radius: 8px;
+  overflow: hidden;
+}
+.ListImg img {
+  width: 380px;
+  height: 300px;
+  border-radius: 8px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.ListImg li:hover img {
+  transform: scale(1.074, 1.074);
+  -webkit-transform: scale(1.074, 1.074);
+  -moz-transform: scale(1.074, 1.074);
+  -ms-transform: scale(1.074, 1.074);
+  -o-transform: scale(1.074, 1.074);
+}
+.hoserName {
+  font-size: 22px;
+  font-family: PingFang SC;
+  font-weight: 800;
+  color: rgba(47, 47, 47, 1);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.hoserPing {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(159, 159, 159, 1);
+  margin-top: 16px;
+}
+.plotName {
+  font-size: 16px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: rgba(159, 159, 159, 1);
+  line-height: 30px;
+}
+.plotMoney {
+  font-size: 30px;
+  font-weight: 800;
+  color: rgba(234, 84, 19, 1);
+}
+
+.footer {
+  width: 100%;
+  background: url(../images/bg_footer.png) no-repeat center bottom;
+}
+.footerTop {
+  padding-top: 80px;
+  border-bottom: 1px dashed rgb(110, 100, 110);
+  padding-bottom: 80px;
+}
+.friendly {
+  width: 590px;
+}
+.friendly_link,
+.MobileApp {
+  font-size: 28px;
+  font-family: PingFang SC;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 1);
+  margin-bottom: 40px;
+}
+.friendly ul {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  flex-wrap: wrap;
+}
+.friendly ul li {
+  margin-right: 42px;
+  margin-bottom: 20px;
+}
+.friendly ul li a {
+  font-size: 20px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: rgba(159, 159, 159, 1);
+}
+.friendly ul li:hover a {
+  text-decoration: underline;
+}
+.xcxImg {
+  margin-left: 40px;
+}
+.appImg dd,
+.xcxImg dd {
+  font-size: 22px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  margin-top: 40px;
+}
+.footerBottom {
+  margin-top: 80px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.footerBottom ul {
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+}
+.footerBottom ul li {
+  float: left;
+}
+.footerBottom ul li a {
+  font-size: 14px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: rgba(159, 159, 159, 1);
+  margin: 0 18px;
+}
+.footerBottom ul li span {
+  color: rgba(159, 159, 159, 1);
+}
+.Copyright,
+.Icp {
+  font-size: 14px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: rgba(159, 159, 159, 1);
+  text-align: center;
+  margin-top: 20px;
+}
+.Icp a {
+  font-size: 14px;
+  font-family: PingFang SC;
+  font-weight: 500;
+  color: rgba(159, 159, 159, 1);
+}
